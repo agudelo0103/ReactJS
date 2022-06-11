@@ -20,7 +20,7 @@ function saludo(usuario) {
 const elemento = (
   <div>
     <h1>{saludo(usuario)}</h1>
-     <img src={usuario.avatar}/>
+  
 
   </div>
 
