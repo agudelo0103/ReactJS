@@ -20,7 +20,7 @@ class Card extends React.Component {
                             <img src={img} className='float-right' alt="ejercicio"/>   
                         </div>
                         <div className='col-6 proyecto-Card-Info'>
-                            <h1>Guia</h1>
+                            <h1>{title}</h1>
                             <p>{description}</p>
                         </div>
                         </div>

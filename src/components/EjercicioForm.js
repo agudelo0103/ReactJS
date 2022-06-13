@@ -9,15 +9,10 @@ class EjercicioForm extends React.Component{
         console.log(this.state)
      }
 
-    handleChange = e => {
-
-        this.setState({
-            [e.target.name] : e.target.value
-        })
-        
-    }
+  
 
     render(){
+        const {onChange, form} = this.props
         return(
            <div className = "contenedor">
                <form 
@@ -29,8 +24,8 @@ class EjercicioForm extends React.Component{
                             className = "form-control"
                             placeholder = "title"
                             name="title"
-                            onChange={this.handleChange}
-                            value={this.state.title}
+                            onChange={onChange}
+                            value={form.imgtitle}
                        />
                    </div>
                    <div className = "form-group">
@@ -39,8 +34,8 @@ class EjercicioForm extends React.Component{
                             placeholder = "description"
                             type = "text"
                             name="description"
-                            onChange={this.handleChange}
-                            value={this.state.description}
+                            onChange={onChange}
+                            value={form.description}
                        />
                     </div>
                     <div className = "form-group">
@@ -49,8 +44,8 @@ class EjercicioForm extends React.Component{
                             className = "form-control"
                             placeholder = "img"
                             name="img"
-                            onChange={this.handleChange}
-                            value={this.state.img}
+                            onChange={onChange}
+                            value={form.img}
                        />
                    </div>
                    <div className = "form-row">
@@ -60,8 +55,8 @@ class EjercicioForm extends React.Component{
                                 type = "text"
                                 placeholder = "leftColor"
                                 name="leftColor"
-                                onChange={this.handleChange}
-                                value={this.state.leftColor}
+                                onChange={onChange}
+                                value={form.leftColor}
                             />
                        </div>
                        <div className = "col">
@@ -70,8 +65,8 @@ class EjercicioForm extends React.Component{
                                 type = "text"
                                 placeholder = "rightColor"
                                 name="rightColor"
-                                onChange={this.handleChange}
-                                value={this.state.rightColor}
+                                onChange={onChange}
+                                value={form.rightColor}
                             />
                        </div>
                     </div>

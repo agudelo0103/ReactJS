@@ -5,7 +5,7 @@ import botonImg from '../Imagenes/agregar.png'
 import { Link } from 'react-router-dom'
 
 const AggBoton = () => (
-    <Link to="/exercise/new">
+    <Link to="/ejercicio/nuevo">
         <img src={botonImg} className="proyecto-Add" alt="ejercicios"/>
     </Link>
 )
