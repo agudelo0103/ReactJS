@@ -1,7 +1,7 @@
 .card {
     border: none;
     border-radius: 8px;
-    /*background: url('../../Imagenes/circulos.png') no-repeat, linear-gradient(to right, #A74CF2, #617BFB);*/
+    background: url('../../Imagenes/circulos.png') no-repeat, linear-gradient(to right, #A74CF2, #617BFB);
 }
 .proyecto-User-Info {
     margin-top: 50px;
@@ -16,11 +16,11 @@
     padding-left: 0;
     padding-right: 75px;
 }
-.proyecto-Card-Info h1{
+.proyecto-Card-Info {
     font-size: 23px;
     color: white;
 }
-.proyecto-Card-Info p{
+.proyecto-Card-Info{
     font-size: 11px;
     color: white;
 }

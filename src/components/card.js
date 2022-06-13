@@ -1,45 +1,33 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import imagenEjercicios from '../Imagenes/ejercicio.png'
+
+import React from 'react'
+import circlesImg from '../Imagenes/circulos.png'
+import emptyImg from '../Imagenes/vacio.png'
 import './styles/Card.css'
-import circuloImg from '../Imagenes/circulos.png'
 
-
-class Card extends React.Component{
-
-    constructor(props){
-        super(props)
-        this.state = {
-            image: 'https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/bulbasaur.png?alt=media&token=567caf19-af47-414e-a9d4-3854ab24c7dc'
-        }
-    }
+class Card extends React.Component {
 
     render(){
-        const  { tittle, description, img, leftColor, rightColor} = this.props
-        return (
-
-            <div className="card mx-auto proyecto-Card"
-            //estilos en linea
-            style={{
-                backgroundImage: `url(${circuloImg}), Linear-gradient(to right, ${leftColor}, ${rightColor})`
-            }}
+        const {title, description, img, leftColor, rightColor } = this.props
+        return(
+            <div className='card mx-auto proyecto-Card'
+                style={{
+                    backgroundImage: `url(${circlesImg}), Linear-gradient(to right, ${leftColor}, ${rightColor})`
+                }}
             >
-                <div className="card-body">
-                    <div className="row center">
-                        <div className="col-6">
-                            <img src={this.state.image} className="float-right"/>
+            <div className='card-body'>
+                <div className='row center'>
+                        <div className='col-6'>
+                            <img src={img} className='float-right' alt="ejercicio"/>   
                         </div>
-                        <div className="col-6 proyecto-Card-Info">
-                                <h1>{tittle}</h1>
-                                <p>{description} </p>
+                        <div className='col-6 proyecto-Card-Info'>
+                            <h1>Guia</h1>
+                            <p>{description}</p>
                         </div>
-                    </div>
+                        </div>
+            
                 </div>
             </div>
-            
         )
     }
-
-}
-
-export default Card
+} 
+export default Card 
