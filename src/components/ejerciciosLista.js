@@ -7,11 +7,7 @@ const EjercicioLista=({ejercicios}) => (
             return (
                 <Card
                 key={ejercicio.id}
-                    title={ejercicio.title}
-                    description={ejercicio.description}
-                    img={ejercicio.img}
-                    leftColor={ejercicio.leftColor}
-                    rightColor={ejercicio.rightColor}
+                {...ejercicio}
                 /> 
             ) 
         })}
