@@ -1,24 +1,15 @@
 import React from "react";
 
 class EjercicioForm extends React.Component{
-    super(props){}
-     state= {}
-
-     handleSubmit = e => {
-        e.preventDefault()
-        console.log(this.state)
-     }
-
-  
-
+    
     render(){
-        const {onChange, form} = this.props
+        const {onChange, form, onSubmit} = this.props
         return(
-           <div className = "contenedor">
+           <div className = "container">
                <form 
-               onSubmit={this.handleSubmit}
+               onSubmit={onSubmit}
                >
-                   <div className = "form-group">
+                   <div className = "form-group my-3">
                        <input
                             type = "text"
                             className = "form-control"
@@ -28,7 +19,7 @@ class EjercicioForm extends React.Component{
                             value={form.imgtitle}
                        />
                    </div>
-                   <div className = "form-group">
+                   <div className = "form-group mb-3">
                        <input
                             className = "form-control"
                             placeholder = "description"
@@ -38,7 +29,7 @@ class EjercicioForm extends React.Component{
                             value={form.description}
                        />
                     </div>
-                    <div className = "form-group">
+                    <div className = "form-group mb-3">
                        <input
                             type = "text"
                             className = "form-control"
@@ -48,7 +39,7 @@ class EjercicioForm extends React.Component{
                             value={form.img}
                        />
                    </div>
-                   <div className = "form-row">
+                   <div className = "row mb-3">
                        <div className = "col">
                             <input
                                 className = "form-control"

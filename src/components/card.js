@@ -9,7 +9,7 @@ class Card extends React.Component {
     render(){
         const {title, description, img, leftColor, rightColor } = this.props
         return(
-            <div className='card mx-auto proyecto-Card'
+            <div className='card mx-auto proyecto-Card my-3'
                 style={{
                     backgroundImage: `url(${circlesImg}), Linear-gradient(to right, ${leftColor}, ${rightColor})`
                 }}
@@ -17,7 +17,7 @@ class Card extends React.Component {
             <div className='card-body'>
                 <div className='row center'>
                         <div className='col-6'>
-                            <img src={img} className='float-right' alt="ejercicio"/>   
+                            <img src={img || emptyImg } className='float-right' alt="ejercicio"/>   
                         </div>
                         <div className='col-6 proyecto-Card-Info'>
                             <h1>{title}</h1>
