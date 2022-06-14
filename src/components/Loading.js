@@ -3,6 +3,6 @@ import './styles/Loading.css'
 
 
 const Loading = ( ) =>(
-    <div class="loader">Cargando...</div>
+    <div className="loader">Cargando...</div>
 )
  export default Loading
