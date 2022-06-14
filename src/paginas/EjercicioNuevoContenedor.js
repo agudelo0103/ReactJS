@@ -34,9 +34,9 @@ const EjercicioNuevoContenedor = ({history}) => {
                 },
                 body: JSON.stringify(form)
             }
-            await fetch(`${url}/exercises`, config)
+            await fetch(`${url}/Ejercicios`, config)
             setLoading(false)
-            history.push('/exercise')
+            history.push('/ejercicio')
         } catch (error) {
             setLoading(false)
             setError(error)

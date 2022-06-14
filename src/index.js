@@ -1,14 +1,8 @@
-import React from "react";
-import  {createRoot}  from "react-dom/client";
+import React from 'react'
+import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 import App from './components/App'
 
+const contenedor = document.getElementById('root')
 
-
-const contenedor = document.getElementById('root');
-//ReactDOM.render(__Que elemento renderea__, __donde lo renderea__)
-//los componentes se define mediante etiquetas
-const root = createRoot(contenedor)
-root.render(<App/>)
-              
-  
+ReactDOM.render(<App />, contenedor)
