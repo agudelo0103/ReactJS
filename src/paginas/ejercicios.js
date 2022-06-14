@@ -10,6 +10,20 @@ class Ejercicios extends React.Component {
             data:[]  
         }
     
+    async componentDidMount(){
+        await this.fetchEjercicios()
+
+    }
+
+    fetchEjercicios=async() => {
+        let res= await fetch('http://localhost:8000/api/ejercicios')
+        let data = await res.json()
+
+        this.setState({
+                data
+        })
+    
+    }
     render(){
         return(
             <div>
